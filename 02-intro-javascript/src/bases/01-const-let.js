@@ -1,13 +1,13 @@
-const name = 'Jhon';
+const firstName = 'Jhon';
 const lastName = 'Moofarrif';
 
 let valueDices = 4;
 valueDices = 5;
 
-console.log("zzzs", name, lastName, valueDices)
+console.log("zzzs", firstName, lastName, valueDices)
 
 if (true) {
-  const name = 'Peter' 
-  console.log(`name`, name)
+  const firstName = 'Peter' 
+  console.log(`name`, firstName)
 }
 console.log(`valueDices out if`, valueDices)
