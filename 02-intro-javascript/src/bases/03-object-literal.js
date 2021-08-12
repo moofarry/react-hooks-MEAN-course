@@ -12,7 +12,7 @@ const person = {
 };
 
 console.log(person);
-//clone object (operator spread=
+//if i need to clone object use operator spread
 const person2 = { ...person};
 person2.firstName = 'Peter';
 console.log(person2)
