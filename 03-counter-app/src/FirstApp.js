@@ -1,21 +1,24 @@
 import React from "react";
+import PropTypes from "prop-types";
 // import React, { Fragment } from "react";
 
-const FirstApp = () => {
+const FirstApp = ({ greeting,subtitle }) => {
 
-  // const greetingAless = {
-  //   firstName: "Aless",
-  //   age: "22"
-  // }
-  const greeting = 'Hello World';
 
   return (
     <>
       <h1> {greeting}</h1>
       {/* <pre>{JSON.stringify(greeting, null, 3)}</pre>  */}
-      <p1>My first app</p1>
+      <p>{subtitle}</p>
     </>
   );
 };
+
+FirstApp.propTypes = {
+  greeting: PropTypes.string.isRequired
+}
+FirstApp.defaultProps = {
+  subtitle : 'Im sub-Title'
+}
 
 export default FirstApp;

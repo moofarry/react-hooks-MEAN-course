@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDom from "react-dom";
-import FirstApp from "./FirstApp";
+import CounterApp from "./CounterApp";
 import './index.css';
 
 
 const divRoot = document.querySelector('#root');
 
 
-ReactDom.render( <FirstApp />, divRoot);
+ReactDom.render( <CounterApp  value={100}/>, divRoot);
 
 
