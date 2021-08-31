@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 
-import { getGreetings } from "../base/02-template-string";
+import { getGreetings } from "../../base/02-template-string";
 
 describe("test in 02-template-string.js", () => {
   test("getGreetings must be return Hello Jhon!", () => {
