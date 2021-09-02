@@ -1,4 +1,4 @@
-import { returnArray } from "../base/07-deses-arr";
+import { returnArray } from "../../base/07-deses-arr";
 
 describe("test in  07-deses.arr", () => {
   test("should be return two args : string and number", () => {

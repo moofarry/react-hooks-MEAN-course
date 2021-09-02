@@ -1,4 +1,4 @@
-import { getImage } from "../base/11-async-await";
+import { getImage } from "../../base/11-async-await";
 
 describe("test with async-await and fech", () => {
   test("should return url of imge", async () => {

@@ -1,5 +1,5 @@
-import { getHeroByIdAsync } from "../base/09-promise";
-import heros from "../data/heros";
+import { getHeroByIdAsync } from "../../base/09-promise";
+import heros from "../../data/heros";
 
 describe("test with promises", () => {
   test("should return one hero async", (done) => {

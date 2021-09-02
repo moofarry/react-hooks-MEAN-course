@@ -1,5 +1,5 @@
-import { getHeroById, getherosByOwner } from "../base/08-imp-exp";
-import heros from "../data/heros";
+import { getHeroById, getherosByOwner } from "../../base/08-imp-exp";
+import heros from "../../data/heros";
 
 describe("test in func heros ", () => {
   test("should be return a hero by id ", () => {
