@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <FirstApp /> should show <FirstApp /> correctly 1`] = `
+<Fragment>
+  <h1>
+     
+    Im Goku
+     
+  </h1>
+  <p>
+     
+    Im sub-Title
+     
+  </p>
+</Fragment>
+`;
+
+exports[`Test in <FirstApp /> should show subtitle correctly: Im sub-Title 1`] = `" Im sub-Title "`;
