@@ -1,21 +1,20 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
+import PropTypes from "prop-types";
 
 export const AddCategory = ({ setCategories }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = React.useState('');
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
-  const handleSubmit = React.useCallback(
-    (e) => {
-      e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (inputValue.trim().length > 2) {
       setCategories((prevCategories) => [...prevCategories, inputValue]);
       setInputValue("");
-    },
-    [inputValue, setCategories]
-  );
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -26,4 +25,8 @@ export const AddCategory = ({ setCategories }) => {
       ></input>
     </form>
   );
+};
+
+AddCategory.propTypes = {
+  setCategories: PropTypes.func.isRequired,
 };
