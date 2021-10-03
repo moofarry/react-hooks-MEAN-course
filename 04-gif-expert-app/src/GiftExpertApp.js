@@ -11,7 +11,6 @@ const GiftExpertApp = () => {
       <h2>GiftExpertApp </h2>
       <AddCategory setCategories={setCategories} />
       <hr />
-      <button>Agregar</button>
       <ol>
         {categories.map((category, indx) => (
           <GifGrid key={category} category={category} />
