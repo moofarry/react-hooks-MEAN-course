@@ -30,6 +30,12 @@ exports[`test in GifGrid should show items when img is load useFetchGifs 1`] = `
       title="ABC Title"
       url="https://google.com"
     />
+    <GifGridItem
+      id="ABCD"
+      key="ABCD"
+      title="ABC Title"
+      url="https://google.com"
+    />
   </div>
 </Fragment>
 `;

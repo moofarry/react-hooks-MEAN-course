@@ -31,6 +31,11 @@ describe("test in GifGrid", () => {
         url: "https://google.com",
         title: "ABC Title",
       },
+      {
+        id: "ABCD",
+        url: "https://google.com",
+        title: "ABC Title",
+      },
     ];
 
     useFetchGifs.mockReturnValue({
@@ -40,5 +45,7 @@ describe("test in GifGrid", () => {
 
     const wrapper = shallow(<GifGrid category={category} />);
     expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find("p").exists()).toBe(false);
+    expect(wrapper.find('GifGridItem').length).toBe(gifs.length);
   });
 });
