@@ -1,0 +1,12 @@
+body{
+  padding: 5%;
+}
+
+.blockquote{
+  display: flex;
+}
+
+p{
+
+  border-style: solid  ;
+}
