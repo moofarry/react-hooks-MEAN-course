@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from 'react-dom'
 // import { Memo } from "./components/06-memo/Memo";
 // import { MemoHook } from "./components/06-memo/MemoHook";
 // import { CallbackHook } from "./components/06-memo/CallbackHook";
@@ -16,7 +16,14 @@ import { createRoot } from "react-dom/client";
 //import { TodoApp } from "./components/08-useReducer/TodoApp";
 
 import { MainApp } from "./components/09-useContext/MainApp";
+
+ReactDOM.render(<MainApp />, document.getElementById("root"));
+
+/* React +18
+import { createRoot } from "react-dom/client";
+
 const divRoot = document.getElementById("root");
 const root = createRoot(divRoot);
 
 root.render(<MainApp />);
+*/
