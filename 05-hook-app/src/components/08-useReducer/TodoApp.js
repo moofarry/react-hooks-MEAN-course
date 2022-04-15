@@ -1,27 +1,26 @@
-import React, { useReducer , useEffect} from "react";
+import React, { useReducer, useEffect } from "react";
 import { todoReducer } from "./todoReducer";
 import "./styles.css";
 import { useForm } from "../../hooks/useForm";
 
-
 const init = () => {
-  return  JSON.parse(localStorage.getItem("todos")) || [];
-}
+  return JSON.parse(localStorage.getItem("todos")) || [];
+};
 
 export const TodoApp = () => {
-
   const [todos, dispatch] = useReducer(todoReducer, [], init);
-  const [ {description}, handleInputChange, reset] = useForm({description: ""});
+  const [{ description }, handleInputChange, reset] = useForm({
+    description: "",
+  });
 
   useEffect(() => {
-    localStorage.setItem('todos',JSON.stringify(todos))
-  }, [todos])
-  
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (description.trim() <=1) {
+    if (description.trim() <= 1) {
       return;
     }
     const newTodo = {
@@ -43,14 +42,14 @@ export const TodoApp = () => {
       payload: todoId,
     };
     dispatch(action);
-  }
+  };
 
   const handleToggle = (todoId) => {
     dispatch({
       type: "toggle",
       payload: todoId,
     });
-  }
+  };
 
   return (
     <div>
@@ -58,18 +57,23 @@ export const TodoApp = () => {
       <hr />
       <div className="row">
         <div className="col-6 me-5">
+          {/* */}
           <ul className="list-group list-group-flush">
             {todos.map((todo, i) => (
+              //TodoListItem, todo, index, handleDeleted, handleToggle
               <li key={todo.id} className="list-group-item">
-                <p 
-                className={ `${todo.done && 'complete'}`}
+                <p
+                  className={`${todo.done && "complete"}`}
                   onClick={() => handleToggle(todo.id)}
                 >
                   {i + 1}. {todo.description}
                 </p>
-                <button className="btn btn-danger"
+                <button
+                  className="btn btn-danger"
                   onClick={() => handleRemove(todo.id)}
-                >Borrar</button>
+                >
+                  Borrar
+                </button>
               </li>
             ))}
           </ul>
