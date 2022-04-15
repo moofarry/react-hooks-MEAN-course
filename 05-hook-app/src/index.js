@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
 // import { Memo } from "./components/06-memo/Memo";
 // import { MemoHook } from "./components/06-memo/MemoHook";
 // import { CallbackHook } from "./components/06-memo/CallbackHook";
@@ -13,10 +13,10 @@ import { createRoot } from 'react-dom/client';
 // import CounterWithCustomHook from "./components/01-useState/CounterWithCustomHook";
 // import { CounterApp } from "./components/01-useState/CounterApp";
 // import { HookApp } from "./HookApp";
+//import { TodoApp } from "./components/08-useReducer/TodoApp";
 
-import { TodoApp } from "./components/08-useReducer/TodoApp";
-
+import { MainApp } from "./components/09-useContext/MainApp";
 const divRoot = document.getElementById("root");
-const root = createRoot(divRoot)
+const root = createRoot(divRoot);
 
-root.render(<TodoApp /> );
+root.render(<MainApp />);
