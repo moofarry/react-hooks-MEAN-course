@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-
+import { createRoot } from 'react-dom/client';
 // import { Memo } from "./components/06-memo/Memo";
 // import { MemoHook } from "./components/06-memo/MemoHook";
 // import { CallbackHook } from "./components/06-memo/CallbackHook";
@@ -17,4 +16,7 @@ import ReactDOM from "react-dom";
 
 import { TodoApp } from "./components/08-useReducer/TodoApp";
 
-ReactDOM.render(<TodoApp />, document.getElementById("root"));
+const divRoot = document.getElementById("root");
+const root = createRoot(divRoot)
+
+root.render(<TodoApp /> );
