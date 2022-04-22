@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test in <todoApp/> should show correctly 1`] = `
+<div>
+  <h1>
+    TodoApp: (
+    0
+    )
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-6 me-5"
+    >
+      <TodoList
+        handleRemove={[Function]}
+        handleToggle={[Function]}
+        todos={Array []}
+      />
+    </div>
+    <div
+      className="col-4"
+    >
+      <TodoAdd
+        handleAddTodo={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;

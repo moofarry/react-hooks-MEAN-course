@@ -1,9 +1,8 @@
 import React, { useReducer, useEffect } from "react";
 import { todoReducer } from "./todoReducer";
 import "./styles.css";
-import { useForm } from "../../hooks/useForm";
 import { TodoList } from "./TodoList";
-import { TodooAdd } from "./TodooAdd";
+import { TodoAdd } from "./TodoAdd";
 
 const init = () => {
   return JSON.parse(localStorage.getItem("todos")) || [];
@@ -48,7 +47,7 @@ export const TodoApp = () => {
           />
         </div>
         <div className="col-4">
-          <TodooAdd handleAddTodo={handleAddTodo} />
+          <TodoAdd handleAddTodo={handleAddTodo} />
         </div>
       </div>
     </div>

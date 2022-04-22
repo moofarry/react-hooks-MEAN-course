@@ -10,7 +10,6 @@ export const MultipleCustomHooks = () => {
     `https://www.breakingbadapi.com/api/quotes/${counter}`
   );
   const { author, quote } = !!data && data[0];
-console.log(counter);
   return (
     <div>
       <h1>BreakingBad Quotes</h1>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "../../hooks/useForm";
 
-export const TodooAdd = ({ handleAddTodo }) => {
+export const TodoAdd = ({ handleAddTodo }) => {
   const [{ description }, handleInputChange, reset] = useForm({
     description: "",
   });

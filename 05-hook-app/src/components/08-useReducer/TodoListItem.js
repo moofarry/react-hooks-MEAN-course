@@ -9,7 +9,7 @@ export const TodoListItem = ({ todo, index, handleRemove, handleToggle }) => {
       >
         {index + 1}. {todo.description}
       </p>
-      <button className="btn btn-danger" onClick={() => handleRemove(todo.id)}>
+      <button className="btn btn-danger" onClick={() => handleRemove (todo.id)}>
         Borrar
       </button>
     </li>
