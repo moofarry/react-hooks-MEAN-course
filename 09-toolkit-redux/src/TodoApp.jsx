@@ -1,8 +1,5 @@
-import { useState } from 'react';
-import {
-  useGetTodosQuery,
-  useGetTodosByIdQuery,
-} from './store/apis/todosApi';
+import { useState } from "react";
+import { useGetTodosQuery, useGetTodosByIdQuery } from "./store/apis/todosApi";
 
 export const TodoApp = () => {
   const [todoId, setTodoId] = useState(1);
@@ -23,7 +20,7 @@ export const TodoApp = () => {
     <>
       <h1>Todos - RTK Query</h1>
       <hr />
-      <h4>isLoading: {isLoading ? 'True' : 'False'} </h4>
+      <h4>isLoading: {isLoading ? "True" : "False"} </h4>
       <button onClick={prevTodo}> Prev </button>
       <button onClick={nextTodo}> Next </button>
       <p>{JSON.stringify(todo)}</p>
